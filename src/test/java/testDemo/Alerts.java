@@ -15,7 +15,7 @@ public class Alerts {
          * if my website sends an alert u can accept it or dismiss it or if the alert is a prompt u can send keys
          */
         driver.findElement(By.id("the id of the element the let the alert to appear")).click();
-        Thread.sleep(5000);
+       // Thread.sleep(5000);
         driver.switchTo().alert().accept();
         driver.switchTo().alert().dismiss();
         driver.switchTo().alert().sendKeys("hello"); // alert send the data to my code and to console
