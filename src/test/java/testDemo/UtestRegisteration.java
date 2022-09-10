@@ -21,7 +21,7 @@ public class UtestRegisteration {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
         /**
-         *    if u want to wain the element to be visible in screen then click on it or do anything
+         *    if u wait to wain the element to be visible in screen then click on it or do anything
          *WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(600));
          *wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("e"))).click();
          */
