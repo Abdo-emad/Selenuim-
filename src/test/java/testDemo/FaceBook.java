@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
+import java.util.List;
 
 public class FaceBook {
     public static void main(String[]s){
@@ -39,8 +40,11 @@ public class FaceBook {
         WebElement year = driver.findElement(By.id("year"));
         Select select_year = new Select(year);
         select_year.selectByVisibleText("2000");
-        WebElement male = driver.findElement(By.className("_58mt"));
-        male.click();
+       // WebElement male = driver.findElement(By.className("_58mt"));
+       // male.click();
+      List<WebElement> radioButton= driver.findElements(By.xpath("//*[@type='radio']"));
+       radioButton.get(1).click();
+      //  driver.findElements(By.xpath("//*[@type='radio']")).get(1).click();
         WebElement button = driver.findElement(By.name("websubmit"));
         button.click();
 
